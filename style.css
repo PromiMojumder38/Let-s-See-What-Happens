@@ -7,6 +7,8 @@
 
 body{
     font-family: 'Poppons', sans-serif;
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/back1.jpg");
+    
 }
 
 h1{
@@ -24,6 +26,9 @@ h6{
 }
 
 nav{
+    position:fixed;
+    width: 100%;
+    background-color: #fff;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,5 +62,127 @@ nav img{
  }
 
  nav .navigation ul li a:hover{
-
+    color: #FDC93B;
  }
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#home a.blue{
+    color: #fff;
+    background: rgba(21,21,100);
+    transition: 0.5s ease;
+}
+#home a.blue:hover{
+    color: rgba(21,21,100); 
+    background: #fff;
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #f8bd19;
+    transition: 0.5s ease;
+}
+#home a.yellow:hover{
+    color: rgba(21,21,100); 
+    background: #fff;
+}
+
+#reg{
+    padding:6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url("Images/b2.png");
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#reg .form{
+    background: #fff;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+}
+#reg .form input{
+    margin: 15px 0;
+    padding:15px 10px;
+    border: 1px solid rgb(84,40,241);
+    outline: none;
+}
+#reg .form .btn{
+    margin-top: 20px;
+}
+#reg .form a.yellow{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: #f8bd19;
+    transition: 0.5s ease;
+}
+#reg .form a.yellow:hover{
+    color: rgba(21,21,100); 
+    background: #fff;
+}
+
+#reg .form a.blue{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(21,21,100);
+    transition: 0.5s ease;
+}
+#reg .form a.blue:hover{
+    color: rgba(21,21,100); 
+    background: #fff;
+}
