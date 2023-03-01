@@ -75,6 +75,25 @@ nav img{
  nav .navigation ul li a:hover{
     color: #FDC93B;
  }
+#kahini{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+ #kahini p{
+    background-color: rgba(198, 119, 58, 0.3);
+    color: #000;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+ }
 
 #home{
     width: 100%;
@@ -89,8 +108,10 @@ nav img{
     padding-top: 40px;
 }
 
+
 #home h2{
-    color: #fff;
+    background-color: rgba(198, 119, 58, 0.3);
+    color: #000;
     font-size: 2.2rem;
     letter-spacing: 1px;
 }
@@ -146,7 +167,7 @@ nav img{
 #join a{
     height: 100px;
     width: 100px;
-    background-color: #fff;
+    background-color: rgba(104, 81, 185, 0.3);
     border-radius: 50px;
     text-align: center;
     margin: 10px;
@@ -199,7 +220,7 @@ nav img{
     align-content: center;
 }
 #reg .form{
-    background: #fff;
+    background-color: rgba(198, 119, 58, 0.3);
     border-radius: 8px;
     display:flex;
     flex-direction: column;
@@ -230,11 +251,11 @@ nav img{
     font-weight: 600;
     border-radius: 5px;
     color: #fff;
-    background: #f8bd19;
+    background: #f81963;
     transition: 0.5s ease;
 }
 #reg .form a.yellow:hover{
-    color: rgba(21,21,100); 
+    color: #f81963;
     background: #fff;
 }
 
