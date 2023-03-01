@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Poppons', sans-serif;
-    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/back1.jpg");
+    background-image: url("images/back1.jpg");
 }
 
 h1{
@@ -173,11 +173,16 @@ nav img{
 .fa-telegram{
     color: #0088cc;
 }
+
 .fa-discord{
     color: #5865F2;
 }
 .fa-envelope{
-    color: #EA4335;
+    color: rgb(235, 78, 21);
+}
+
+.fa-youtube{
+    color:red;
 }
 
 #reg{
@@ -190,6 +195,8 @@ nav img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 #reg .form{
     background: #fff;
@@ -198,7 +205,6 @@ nav img{
     flex-direction: column;
     padding:50px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-
 }
 #reg .form input{
     margin: 15px 0;
@@ -260,13 +266,14 @@ nav img{
     margin-top:50px;
     
 }
+
 #experts .expert-box .profile{
-    background: #74436d;
+    background: #ffcbab;
     padding: 30px 10px;
     width: 300px;
     height: 320px;
     margin:auto;
-    color: white;
+    color: black;
 }
 
  .chobi{
@@ -277,7 +284,7 @@ nav img{
 
 .nam{
     line-height: 1.0;
-    color:white;
+    color:#000;
 }
 
  .pro-links{
@@ -286,16 +293,15 @@ nav img{
 }
 
 .pro-links i{
-    background: rgb(23, 13, 98);
-    color: #fff;
-    border: 4px solid rgb(23, 13, 98);
+    color: rgb(10, 10, 113);
+    border: 4px solid transparent;
     cursor: pointer;
     transition: 0.5s ease;
     
 }
 .pro-links i:hover{
-    background: #fff;
-    color:rgb(23, 13, 98);
-    border: 5px solid #fff;
-    cursor: pointer
+    background: #170D62;
+    color:#fff;
+    border: 5px solid transparent;
+    cursor: pointer;
 }
