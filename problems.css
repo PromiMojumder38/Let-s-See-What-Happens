@@ -5,10 +5,10 @@
 }
 .probs{
     background-color: #fff;
-    color: #1e060c;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    width: -moz-fit-content;
+    width: 800px;
+    height: fit-content;
   background-color: #ffcbab;
   padding: 10px;
   margin-bottom: 1em;
@@ -17,6 +17,9 @@
   margin-top: 20px;
   border: 5px solid grey;
     
+}
+.probs p{
+  color: #000;
 }
 
 .probs h{
@@ -31,15 +34,23 @@
     height: 90px;
 }
 .write{
-    width: 620px;
+    width: 720px;
+    height: 30px;
     padding-left: 10px;
+    padding-right: 5px;
+    font-size: 20px;
 }
 
 .reg{
+        height: 25px;
+        width: 15px;
         color: #fff;
         background: rgba(21,21,100);
         transition: 0.5s ease;
-        width: 95px;
         padding: 7px;
         text-decoration: none;
+        font-size: 20px;
+}
+.reg:hover{
+  background: rgb(215, 21, 183);
 }
