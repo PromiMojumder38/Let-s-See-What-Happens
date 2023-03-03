@@ -1,0 +1,35 @@
+.contain{
+
+    padding: 10px;
+    
+    
+  }
+  .probs{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ffcbab;
+  padding: 10px;
+  margin-bottom: 1em;
+  margin-right: 800px;
+  margin-left: 40px;
+  margin-top: 20px;
+  border: 5px solid grey;
+      
+  }
+  
+  .probs h{
+      font-size: 1.5rem;
+      color: rgb(1, 1, 13);
+      
+      
+  }
+  .probs p{
+    font-size: 1.5rem;
+    color: rgb(1, 1, 13);
+
+}
+
+  
+  

@@ -1,0 +1,45 @@
+.contain{
+
+  padding: 10px;
+
+}
+.probs{
+    background-color: #fff;
+    color: #1e060c;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: -moz-fit-content;
+  background-color: #ffcbab;
+  padding: 10px;
+  margin-bottom: 1em;
+  margin-right: 800px;
+  margin-left: 40px;
+  margin-top: 20px;
+  border: 5px solid grey;
+    
+}
+
+.probs h{
+    font-size: 2rem;
+    color: navy;
+}
+
+.ans{
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    height: 90px;
+}
+.write{
+    width: 620px;
+    padding-left: 10px;
+}
+
+.reg{
+        color: #fff;
+        background: rgba(21,21,100);
+        transition: 0.5s ease;
+        width: 95px;
+        padding: 7px;
+        text-decoration: none;
+}
