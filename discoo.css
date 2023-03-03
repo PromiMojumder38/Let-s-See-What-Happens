@@ -5,3 +5,52 @@
     box-sizing: border-box;
     user-select: none;
 }
+
+.container{
+    width: min(90%,1140px);
+    margin: 3rem auto;
+}
+
+.cmnt_container{
+    position: relative;
+}
+
+.cmnt_container::before{
+    content: "";
+    background-color: rgb(170,170,170);
+    position: absolute;
+    min-height: 100%;
+    width: 1px;
+    left: -10px;
+}
+.cmnt_container:not(:first-child){
+    margin-left: 3rem;
+    margin-top:10rem;
+}
+.cmnt_card{
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    min-width: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+.cmnt_card h3, cmnt_card p{
+    margin-bottom: 1rem;
+}
+.cmt_footer{
+    display: flex;
+    font-size: .85rem;
+    opacity: .6;
+    gap:30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.l{
+    cursor: pointer;
+}
+.disl{
+    cursor: pointer;
+}
+.show_rply{
+    cursor: pointer;
+}
