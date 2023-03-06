@@ -54,3 +54,8 @@
 .reg:hover{
   background: rgb(215, 21, 183);
 }
+
+.mathinline{
+  font-size: 1.3rem;
+  color: #000;
+}

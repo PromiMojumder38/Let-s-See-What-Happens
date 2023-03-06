@@ -1,23 +1,32 @@
-.contain{
 
-    padding: 10px;
-    
-  }
-  .probs{
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    width: -moz-fit-content;
-  width: 500px;
-  background-color: #ffcbab;
-  padding: 10px;
-  margin-bottom: 1em;
-  margin-right: 800px;
-  margin-left: 40px;
-  margin-top: 20px;
-  border: 5px solid grey;
-     line-height: 34px; 
-  }
-  
+.left, .right{
+  letter-spacing: 1px;
+  height: fit-content;
+background-color: #ffcbab;
+padding: 10px;
+border: 5px solid grey; 
+display: inline-block;
+justify-content: center;
+align-items: center;
+}
+
+.left{
+float: left;
+width: 45%;
+margin: 1rem;
+}
+
+.right{
+  float: right;
+width: 45%;
+margin: 1rem;
+}
+
+.probs p{
+color: #000;
+font-size: 1.2rem;
+}
+
 a{
       padding-top: 10px;
       font-size: 2rem;
@@ -34,11 +43,4 @@ a:hover{
   }
 
 
-p{
-    font-size: 1.2rem;
-    color: #000;
-
-}
-
-  
   
