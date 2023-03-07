@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Poppons', sans-serif;
-    background: url(images/back1.jpg) no-repeat center center fixed; 
+    background: url(images/back1.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -81,7 +81,7 @@ nav img{
  nav .navigation ul li a:hover{
     color: #FDC93B;
  }
-.kahini{
+ .kahini{
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -93,8 +93,8 @@ nav img{
 }
  .kahini p{
     text-align: center;
-    background-color: #ffcbab;
-    color: #000;
+    background-color: transparent;
+    color: #fff;
     font-size: 1.2rem;
     letter-spacing: 1px;
     
@@ -106,6 +106,31 @@ nav img{
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+ }
+.kahinii{
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ .kahinii p{
+    text-align: center;
+   color: #fff;
+    margin: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: 90%;
+    padding: 15px;
+    border: 5px solid gray;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
  }
 
 #home{
@@ -123,8 +148,7 @@ nav img{
 
 
 #home h2{
-    background-color: rgba(198, 119, 58, 0.3);
-    color: #000;
+    color: #fff;
     font-size: 2.2rem;
     letter-spacing: 1px;
 }
@@ -138,7 +162,7 @@ nav img{
 
 #home .btn{
     margin-top: 30px;
-
+    padding: 7px;
 }
 
 #home a{
@@ -148,7 +172,6 @@ nav img{
     background-color: #fff;
     font-weight: 600;
     border-radius: 5px;
-
 }
 
 #home a.blue{
@@ -171,22 +194,35 @@ nav img{
     background: #fff;
 }
 
+.loginn{
+    width:100%;
+    color: #fff;
+    background: rgba(21,21,100);
+    transition: 0.5s ease;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+    font-size: large;
+}
+.loginn:hover{
+   background: #d344be;
+}
+
 #join{
     height: 100vh;
     display: flex;
     justify-content: center;
-    border: 5px solid #fff;
     width: 50%;
     height: 140px;
     margin: auto;
     padding: 10px;
-    background-color: #fff;
 }
 
 #join a{
     height: 100px;
     width: 100px;
-    background-color: rgba(104, 81, 185, 0.3);
+    background-color: rgba(167, 163, 181, 0.3);
     border-radius: 50px;
     text-align: center;
     margin: 10px;
@@ -203,15 +239,15 @@ nav img{
 }
 
 .fa-facebook{
-    color: rgb(53, 53, 253);
+    color: rgb(6, 6, 40);
 }
 
 .fa-facebook-f{
-    color: #3b5998;
+    color: navy;
 }
 
 .fa-telegram{
-    color: #0088cc;
+    color: #0f70a0;
 }
 
 .fa-discord{
@@ -226,11 +262,11 @@ nav img{
 }
 
 #reg{
-    padding:6vw 8vw 6vw 8vw;
-    
-    width:100%;
-    height: 100%;
-    background-size: cover;
+    border-radius: 5px;
+    padding:8vw 38vw 8vw 38vw;
+    box-sizing: border-box;
+    width: auto;
+    background-size: 40%;
     background-position: center;
     display: flex;
     justify-content: space-between;
@@ -239,13 +275,20 @@ nav img{
     align-content: center;
 }
 #reg .form{
-    background-color: rgba(198, 119, 58, 0.3);
+    border-radius: 5px;
+    background-color: black;
     border-radius: 8px;
     display:flex;
     flex-direction: column;
-    padding:50px;
+    padding:40px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+
+#reg .form h3{
+    color: #fff;
+    font-size: medium;
+}
+
 #reg .form input{
     margin: 15px 0;
     padding:15px 10px;
@@ -254,48 +297,38 @@ nav img{
 }
 
 #reg .form input::placeholder{
-    color: #413c3c;
+    color: #000;
     font-weight: 500;
-    font-size: 0.9 rem;
+    font-size: 1.5 rem;
 }
 
-#reg .form .btn{
+.btn{
     margin-top: 20px;
+    font-size: 1.4rem;
 }
-#reg .form a.yellow{
+.yellow{
     text-decoration: none;
     font-size: 0.9rem;
-    padding: 13px 35px;
-    background-color: #fff;
+    padding: 5px;
     font-weight: 600;
     border-radius: 5px;
-    color: #fff;
-    background: #f81963;
-    transition: 0.5s ease;
+    color: white;
 }
 #reg .form a.yellow:hover{
     color: #f81963;
-    background: #fff;
 }
 
-#reg .form a.blue{
+.blue{
     text-decoration: none;
     font-size: 0.9rem;
-    padding: 13px 35px;
-    background-color: #fff;
+    padding-top: 10px;
+    
     font-weight: 600;
-    border-radius: 5px;
-    color: #fff;
-    background: rgba(21,21,100);
-    transition: 0.5s ease;
+    color: white;
+    background: transparent;
 }
-#reg .form a.blue:hover{
-    color: rgba(21,21,100); 
-    background: #fff;
-}
-
 #experts{
-    padding: 8vw 8vw 0 8vw;
+    padding: 8vw 8vw 6vw 8vw;
     text-align: center;
     
 }
@@ -305,15 +338,25 @@ nav img{
     grid-gap: 1.5rem;
     margin-top:50px;
     
+    
+}
+#experts h1{
+    color: #fff;
 }
 
+#experts p{
+    color: grey;
+}
+
+
 #experts .expert-box .profile{
-    background: #ffcbab;
+    background: transparent;
     padding: 30px 10px;
     width: 300px;
     height: 320px;
     margin:auto;
-    color: black;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
  .chobi{
@@ -323,17 +366,21 @@ nav img{
 }
 
 .nam{
+    padding-top: 10px;
     line-height: 1.0;
-    color:#000;
+    color:#fff;
 }
 
  .pro-links{
-    margin-top: 10px;
+    margin-top: 8px;
     
+}
+.profile p{
+    color:grey;
 }
 
 .pro-links i{
-    color: rgb(10, 10, 113);
+    color:  #fff;
     border: 4px solid transparent;
     cursor: pointer;
     transition: 0.5s ease;

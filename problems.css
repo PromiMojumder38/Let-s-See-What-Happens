@@ -4,41 +4,42 @@
 
 }
 .probs{
-    background-color: #fff;
+  background: transparent;
+    color: #fff;
     font-size: 1.2rem;
     letter-spacing: 1px;
     width: 800px;
     height: fit-content;
-  background-color: #ffcbab;
+  background-color: transparent;
   padding: 10px;
   margin-bottom: 1em;
   margin-right: 800px;
   margin-left: 40px;
   margin-top: 20px;
   border: 5px solid grey;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     
 }
 .probs p{
-  color: #000;
+  color: white;
 }
 
 .probs h{
     font-size: 2rem;
-    color: navy;
+    color: rgb(0, 94, 255);
 }
 
 .ans{
-    padding-left: 40px;
-    padding-right: 35px;
-    padding-bottom: 30px;
-    height: 90px;
+    float: right;
+    padding-top: -40%;
 }
 .write{
-    width: 720px;
+    width: 520px;
     height: 30px;
-    padding-left: 10px;
-    padding-right: 5px;
+    padding: 5px;
     font-size: 20px;
+    background: rgb(218, 209, 209);
+    color:black;
 }
 
 .reg{
@@ -48,14 +49,16 @@
         background: rgba(21,21,100);
         transition: 0.5s ease;
         padding: 7px;
+        padding-top: 15px;
         text-decoration: none;
         font-size: 20px;
+        border-radius: 5px;
 }
 .reg:hover{
   background: rgb(215, 21, 183);
 }
 
 .mathinline{
-  font-size: 1.3rem;
-  color: #000;
+  font-size: 1.2rem;
+  color: #fff;
 }

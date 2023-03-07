@@ -2,12 +2,14 @@
 .left, .right{
   letter-spacing: 1px;
   height: fit-content;
-background-color: #ffcbab;
+background-color: transparent;
 padding: 10px;
 border: 5px solid grey; 
 display: inline-block;
 justify-content: center;
 align-items: center;
+border-radius: 5px;
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .left{
@@ -23,23 +25,23 @@ margin: 1rem;
 }
 
 .probs p{
-color: #000;
+color: #fff;
 font-size: 1.2rem;
 }
 
 a{
       padding-top: 10px;
       font-size: 2rem;
-      color: #008;
+      color: grey;
 
   }
  a:hover::after{
     font-size: 2rem;
-      color: #008;
+      color: grey;
   }
 a:hover{
   font-size: 2rem;
-    color: red;
+    color: rgb(0, 94, 255);
   }
 
 
