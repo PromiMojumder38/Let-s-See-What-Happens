@@ -103,7 +103,6 @@ nav img:hover{
     align-items: center;
 }
  .kahini p{
-    text-align: center;
     background-color: transparent;
     color: #fff;
     font-size: 1.2rem;
@@ -119,30 +118,7 @@ nav img:hover{
     padding-top: 25px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
  }
-.kahinii{
-    width: 100%;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
- .kahinii p{
-    text-align: center;
-   color: #fff;
-    margin: 10px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    width: 90%;
-    padding: 15px;
-    border: 5px solid gray;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
- }
+
 
 #home{
     height: 60vh;
@@ -282,7 +258,7 @@ nav img:hover{
     border-radius: 5px;
     padding:8vw 38vw 8vw 38vw;
     box-sizing: border-box;
-    width: auto;
+    width: 400%;
     background-size: 40%;
     background-position: center;
     display: flex;
@@ -312,16 +288,18 @@ nav img:hover{
 #reg .form input{
     margin: 15px 0;
     padding:15px 10px;
-    border: 1px solid rgb(84,40,241);
-    outline: none;
-    border-radius: 10px;
 
+    background: transparent;
+    color: #fff;
+    border-style:none;
+    border-bottom: 2px solid grey;
 }
 
 #reg .form input::placeholder{
-    color: #000;
+    color: grey;
     font-weight: 500;
     font-size: 1.8 rem;
+    border-style:none;
 }
 .loginn{
     border-radius: 10px;
@@ -384,6 +362,11 @@ nav img:hover{
     color: white;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+#experts .expert-box .profile:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease;
+    background: #221394;
+}
 
  .chobi{
     border-radius: 50%;
@@ -409,12 +392,13 @@ nav img:hover{
     color:  #fff;
     border: 4px solid transparent;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     
 }
 .pro-links i:hover{
-    background: #170D62;
-    color:#fff;
+    background: #fff;
+    color:#221394;
     border: 5px solid transparent;
+    border-radius: 5px;
     cursor: pointer;
 }

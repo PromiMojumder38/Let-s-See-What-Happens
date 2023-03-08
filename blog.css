@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.kahinii{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ .kahinii p{
+    text-align:left;
+   color: #fff;
+    margin: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: 98%;
+    padding: 15px;
+ }
