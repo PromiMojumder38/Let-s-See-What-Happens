@@ -9,7 +9,7 @@
 body{
     font-family: 'Poppons', sans-serif;
     backdrop-filter: blur(2px);
-    background: url(images/bg.jpg) no-repeat center center fixed; 
+    background: url(images/back1.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -197,15 +197,13 @@ nav img:hover{
     width: 50%;
     height: 140px;
     margin: auto;
-    padding: 10px;
-    padding-bottom: 20px;
+    
     margin-bottom: 20px;
 }
 #join a{
     height: 100px;
     width: 100px;
     background-color: transparent;
-    backdrop-filter: blur(3px);
     border-radius: 50%;
     text-align: center;
     margin: 10px;
@@ -222,7 +220,8 @@ nav img:hover{
 #join i{
     transition: all 0.2s linear;
     font-size: 40px;
-    padding: 28%;
+    padding: 27%;
+    padding-left: 25%;
 }
 #join i:hover{
     transform: scale(1.4);

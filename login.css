@@ -9,15 +9,15 @@
   
   .form-container {
     width: 25%;
+    height: 65%;
     padding: 30px;
-    background-color: transparent;
-    backdrop-filter: blur(3px);
+    background:transparent;
+    backdrop-filter: blur(2x);
     border-radius: 20px;
-    border: 1px solid #fff;
-    
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-
+    border: 1px solid white;
   }
+
+ 
   
   h2 {
     margin-top: 0;
@@ -31,15 +31,15 @@
   input[type=text], input[type=password], input[type=email] {
 
     width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
     background: transparent;
     color: #fff;
     border-style:none;
     border-bottom: 2px solid grey;
     }
   button[type=submit] {
-    background-image: linear-gradient(to right, red, orangered,orange, yellow);
+    background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -48,25 +48,58 @@
     cursor: pointer;
     width: 100%;
   }
+  .logsub{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   
   button[type=submit]:hover {
     background-color: rgb(207, 40, 126);
   }
   
-  .form-toggle {
-    margin-top: 20px;
-    text-align: center;
-    color: skyblue;
-  }
-  
-  .form-toggle a {
-    color: skyblue;
-    text-decoration: none;
-  }
-
-  .form-toggle a:hover{
-    color:orangered;
-  }
+ .sin1{
+  margin-bottom: 60px;
+  width:45%;
+  border: none;
+  height:35px;
+  border-radius: 20px;
+  font-size:20px;
+  background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
+  color:white;
+ }
+ .sup1{
+  margin-bottom: 60px;
+  width:45%;
+  height:35px;
+  border: none;
+  border-radius: 20px;
+  font-size:20px;
+  background:transparent;
+  color:rgb(71, 69, 69);
+  transition: all 0.3s ease;
+  cursor: pointer;
+ }
+ .sup2{
+  margin-bottom: 20px;
+  width:45%;
+  height:35px;
+  border: none;
+  border-radius: 20px;
+  font-size:20px;
+  background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
+  color:white;
+ }
+ .sin2{
+  margin-bottom: 20px;
+  width:45%;
+  border: none;
+  height:35px;
+  border-radius: 20px;
+  font-size:20px;
+  background:transparent;
+  color:rgb(71, 69, 69);
+  cursor: pointer;
+ }
 
   
   @media screen and (max-width: 500px) {
@@ -95,12 +128,12 @@
   }
   
   .forgot-password {
-    color:orangered;
+    color:rgb(198, 14, 75);
     text-decoration: none;
     padding-left: 2px;
   }
   .forgot-password:hover {
-    color:red;
+    color:palevioletred;
   }
 
 

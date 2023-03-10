@@ -28,40 +28,76 @@
         </ul>
     </div>
  </nav>
-<div class = "containerr">
-    <div class="cmnt_container" id="first_cmnt">
-        <div class="cmnt_card">
-            <h3 class="cmnt_title">The first comment</h3>
-            <p>amarnam mita chule pori fita</p>
-            <div class="cmt_footer">
-                <div class="l"> Likes 2</div>
-                    <div class ="disl"> Dislikes 2</div>
-                    <div class="show_rply">Reply 2</div>
-            </div>
+
+ <div id="comments"></div>
+
+<form id="comment-form">
+  <input type="text" id="name" name="name" placeholder="Your name">
+  <textarea id="comment" name="comment" placeholder="Write a comment"></textarea>
+  <button type="submit" id="submit-btn">Post</button>
+</form>
+
+  
+<div id="comments">
+    <h2>Comments</h2>
+    <div class="comment">
+      <h3>John Doe</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
+      <button class="reply-btn">Reply</button>
+      <form class="reply-form">
+        <div class="form-group">
+          <input type="text" class="name" name="name" placeholder="Your name">
         </div>
-        <div class="cmnt_container" dataset="first_cmnt" id="first_rply">
-            <div class="cmnt_card">
-                <h3 class="cmnt_title">The first rply </h3>
-                <p>amarnam mita chule pori fita</p>
-                <div class="cmt_footer">
-                    <div class="l"> Likes 2</div>
-                    <div class ="disl"> Dislikes 2</div>
-                    <div class="show_rply">Reply 2</div>
-                </div>
-            </div>
+        <div class="form-group">
+          <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
         </div>
-        <div class="cmnt_container" dataset="first_cmnt">
-            <div class="cmnt_card">
-                <h3 class="cmnt_title">The second rply</h3>
-                <p>amarnam mita chule pori fita</p>
-                <div class="cmt_footer">
-                    <div class="l"> Likes 2</div>
-                    <div class ="disl"> Dislikes 2</div>
-                    <div class="show_rply">Reply 2</div>
-                </div>
-            </div>
+        <button type="submit" class="submit-btn">Post</button>
+      </form>
     </div>
-</div>
+    <div class="comment">
+      <h3>Jane Smith</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
+      <button class="reply-btn">Reply</button>
+      <form class="reply-form">
+        <div class="form-group">
+          <input type="text" class="name" name="name" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Post</button>
+      </form>
+      <div class="replies">
+        <div class="comment">
+          <h3>Tom Lee</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
+          <button class="reply-btn">Reply</button>
+          <form class="reply-form">
+            <div class="form-group">
+              <input type="text" class="name" name="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <form id="comment-form">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <div class="form-group">
+      <textarea id="comment" name="comment" placeholder="Write a comment"></textarea>
+    </div>
+    <button type="submit" id="submit-btn">Post</button>
+  </form>
+  
+
+  
  <script src="disco.js"></script>
 
 </body>
