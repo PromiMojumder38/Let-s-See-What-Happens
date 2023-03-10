@@ -1,46 +1,55 @@
 
-.left, .right{
+.probs{
+  width: 30%;
   letter-spacing: 1px;
-  height: fit-content;
-background-color: transparent;
+  height: 100px;
+  background-image:linear-gradient(to right, black, rgb(37, 35, 35), rgb(92, 86, 86));
 padding: 10px;
-border: 5px solid grey; 
+border: 3px solid grey; 
 display: inline-block;
 justify-content: center;
 align-items: center;
-border-radius: 5px;
-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+border-radius: 20px;
+margin: 18px;
 }
-
 .left{
 float: left;
-width: 45%;
-margin: 1rem;
+margin-left: 1rem;
+padding: 10px;
 }
+
+.middle{
+  float:left;
+margin-left: 1rem;
+padding: 10px;
+}
+
 
 .right{
-  float: right;
-width: 45%;
-margin: 1rem;
+  float: left;
+margin-left: 1rem;
+padding: 10px;
 }
 
+
+
 .probs p{
-color: #fff;
-font-size: 1.2rem;
+color: rgb(147, 137, 137);
+font-size: 1rem;
 }
 
 a{
       padding-top: 10px;
-      font-size: 2rem;
-      color: grey;
-
+      font-size: 1.6rem;
+      color: whitesmoke;
+     line-height: 38px;
   }
  a:hover::after{
-    font-size: 2rem;
-      color: grey;
+    font-size: 1.6rem;
+      color: rgb(48, 46, 46);
   }
 a:hover{
-  font-size: 2rem;
+  font-size: 1.6rem;
     color: rgb(0, 94, 255);
   }
 

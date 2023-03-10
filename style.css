@@ -31,6 +31,7 @@ h6{
 }
 
 nav{
+    height:100px;
   width: 100%;
     background-color:rgba(0,0,0,0.3);
     color: #fff;
@@ -39,11 +40,13 @@ nav{
     justify-content: space-between;
     padding: 22px;
     align-items: center;
+    margin-top: -20px;
 }
 nav h4{
     float: left;
     color: white;
     font-size: 32px;
+    padding-top: 12px;
 }
 nav h4:hover{
     transition: 0.5s ease;
@@ -55,6 +58,7 @@ nav img{
     width:50px;
     cursor:pointer;
     float: left;
+    padding-top: 8px;
 }
 
 nav img:hover{
@@ -71,6 +75,7 @@ nav img:hover{
  nav .navigation ul li{
     list-style: none;
     margin-left: 30px;
+    padding-top: 19px;
  }
 
  nav .navigation ul li a{
@@ -194,6 +199,7 @@ nav img:hover{
     margin: auto;
     padding: 10px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 #join a{
     height: 100px;
@@ -251,74 +257,6 @@ nav img:hover{
 .fa-youtube{
     color:red;
 }
-
-#reg{
-    border-radius: 5px;
-    padding:8vw 38vw 8vw 38vw;
-    box-sizing: border-box;
-    width: 400%;
-    background-size: 40%;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-#reg .form{
-    border-radius: 5px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    border-radius: 8px;
-    display:flex;
-    flex-direction: column;
-    padding:40px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    justify-content: center;
-}
-
-#reg .form h3{
-    color: grey;
-    font-size:30px;
-    text-align: center;
-}
-
-#reg .form input{
-    margin: 15px 0;
-    padding:15px 10px;
-
-    background: transparent;
-    color: #fff;
-    border-style:none;
-    border-bottom: 2px solid grey;
-}
-
-#reg .form input::placeholder{
-    color: grey;
-    font-weight: 500;
-    font-size: 1.8 rem;
-    border-style:none;
-}
-.loginn{
-    border-radius: 10px;
-}
-
-.btn{
-    margin-top: 20px;
-    font-size: 1.4rem;
-}
-.yellow{
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 5px;
-    font-weight: 600;
-    border-radius: 5px;
-    color: white;
-}
-#reg .form a.yellow:hover{
-    color: #f81963;
-}
-
 
 .blue{
     text-decoration: none;
