@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    
 }
 
 body{
@@ -33,7 +34,6 @@ h6{
 nav{
     height:100px;
   width: 100%;
-    background-color:rgba(0,0,0,0.3);
     color: #fff;
     display:flex;
     flex-direction: row;
@@ -54,11 +54,12 @@ nav h4:hover{
 }
 
 nav img{
-    height:50px;
-    width:50px;
+    height:55px;
+    width:55px;
     cursor:pointer;
     float: left;
     padding-top: 8px;
+
 }
 
 nav img:hover{
@@ -76,6 +77,7 @@ nav img:hover{
     list-style: none;
     margin-left: 30px;
     padding-top: 19px;
+
  }
 
  nav .navigation ul li a{
@@ -83,6 +85,10 @@ nav img:hover{
     color: #fff;
     font-size: 16px;
     font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: transparent;
  }
  nav .navigation ul li a:hover{
     color:#000;
@@ -208,8 +214,7 @@ nav img:hover{
     text-align: center;
     margin: 10px;
     line-height: 120px;
-    border-style:solid;
-   border-color:grey;
+    
 }
 
 .up h1{

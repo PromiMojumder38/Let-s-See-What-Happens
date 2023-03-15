@@ -11,8 +11,8 @@
     width: 25%;
     height: 65%;
     padding: 30px;
-    background:transparent;
-    backdrop-filter: blur(2x);
+    background:white;
+    backdrop-filter: blur(4x);
     border-radius: 20px;
     border: 1px solid white;
   }
@@ -34,7 +34,7 @@
     padding: 10px;
     margin-bottom: 20px;
     background: transparent;
-    color: #fff;
+    color: #000;
     border-style:none;
     border-bottom: 2px solid grey;
     }
@@ -76,9 +76,15 @@
   font-size:20px;
   background:transparent;
   color:rgb(71, 69, 69);
-  transition: all 0.3s ease;
   cursor: pointer;
- }
+   }
+   .sup1:hover{
+    color:blue;
+   }
+
+   .sin2:hover{
+    color:blue;
+   }
  .sup2{
   margin-bottom: 20px;
   width:45%;
@@ -99,8 +105,9 @@
   background:transparent;
   color:rgb(71, 69, 69);
   cursor: pointer;
+ 
  }
-
+ 
   
   @media screen and (max-width: 500px) {
     .form-container {
@@ -119,7 +126,7 @@
     display: flex;
     align-items: center;
     padding-left: 2px;
-    color: #fff;
+    color: rgb(198, 14, 75);
   }
   
   .rememberMe input[type=checkbox] {
@@ -133,7 +140,11 @@
     padding-left: 2px;
   }
   .forgot-password:hover {
-    color:palevioletred;
+    color:blue;
+  }
+  .rmbr{
+    color:blue;
+    background: blue;
   }
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Miracles of Math</title>
-    <link rel="icon" type="image/x-icon" href="Images/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="Images/logo2.png">
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "discoo.css">
     <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -15,8 +15,7 @@
 
 <body>
  <nav>
-    
-    <a href = "index.html"><img src="images/logo.jpg"><h4>&nbsp&nbsp;Miracles of Math</h4></a>
+    <a href = "index.html"><img src="images/logo.png"><h4>&nbsp&nbsp;Miracles of Math</h4></a>
     <div class="navigation">
         <ul>
             <li><a href="problems.html">PROBLEMS</a></li>
@@ -28,75 +27,42 @@
         </ul>
     </div>
  </nav>
-
- <div id="comments"></div>
-
-<form id="comment-form">
-  <input type="text" id="name" name="name" placeholder="Your name">
-  <textarea id="comment" name="comment" placeholder="Write a comment"></textarea>
-  <button type="submit" id="submit-btn">Post</button>
-</form>
-
-  
-<div id="comments">
-    <h2>Comments</h2>
+<!-- Comments container -->
+<div id="comments-container">
+    <!-- Comment 1 -->
     <div class="comment">
-      <h3>John Doe</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
-      <button class="reply-btn">Reply</button>
-      <form class="reply-form">
-        <div class="form-group">
-          <input type="text" class="name" name="name" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Post</button>
-      </form>
-    </div>
-    <div class="comment">
-      <h3>Jane Smith</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
-      <button class="reply-btn">Reply</button>
-      <form class="reply-form">
-        <div class="form-group">
-          <input type="text" class="name" name="name" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Post</button>
-      </form>
-      <div class="replies">
+      <div class="author">John:</div>
+      <div class="text">This is a comment</div>
+      <!-- Comment 1 reply button -->
+      <button class="reply">Reply</button>
+      <!-- Comment 1 comment section -->
+      <div class="comment-section">
+        <!-- Comment 1 nested comment 1 -->
         <div class="comment">
-          <h3>Tom Lee</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eros eget mi hendrerit, sed sollicitudin nibh pulvinar.</p>
-          <button class="reply-btn">Reply</button>
-          <form class="reply-form">
-            <div class="form-group">
-              <input type="text" class="name" name="name" placeholder="Your name">
+          <div class="author">Jane:</div>
+          <div class="text">This is a nested comment</div>
+          <!-- Comment 1 nested comment 1 reply button -->
+          <button class="reply">Reply</button>
+          <!-- Comment 1 nested comment 1 comment section -->
+          <div class="comment-section">
+            <!-- Comment 1 nested comment 2 -->
+            <div class="comment">
+              <div class="author">Bob:</div>
+              <div class="text">This is another nested comment</div>
             </div>
-            <div class="form-group">
-              <textarea class="comment" name="comment" placeholder="Write a reply"></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Post</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
+  <!-- Comment form -->
   <form id="comment-form">
-    <div class="form-group">
-      <input type="text" id="name" name="name" placeholder="Your name">
-    </div>
-    <div class="form-group">
-      <textarea id="comment" name="comment" placeholder="Write a comment"></textarea>
-    </div>
-    <button type="submit" id="submit-btn">Post</button>
+    <input type="text" placeholder="Write a comment...">
+    <button type="submit">Submit</button>
   </form>
   
-
+  
   
  <script src="disco.js"></script>
 
