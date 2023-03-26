@@ -5,7 +5,6 @@
     <title>Miracles of Math</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "problems.css">
-    <link rel = "stylesheet" href = "discoo.css">
     <link rel="icon" type="image/x-icon" href="Images/logo2.png">
     <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
@@ -18,18 +17,17 @@
     
     <div class="navigation">
            <ul>
-               <li><a href="problems.html">PROBLEMS</a></li>
-               <li><a href="contest.html">CONTESTS</a></li>
-               <li><a href="disco.html">DISCUSSIONS</a></li>
-               <li><a href="blog.html">BLOG</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="login.html">LOGIN</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="problems.html">PROBLEMS</a></li>
+            <li><a href="contest.html">CONTESTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
            </ul>
        </div>
     </nav>
-    <section class = "contain">
-        <section class="ek">
-            <section class ="probs">
+    <div class = "contain">
+        <div class="probs">
             <br><h><b><i>অস্পর্শ্য দূরত্ব</i></b></h><br><br> 
             8 একক দৈর্ঘ্যবিশিষ্ট একটি সমবাহু ত্রিভুজের তিন শীর্ষবিন্দুকে কেন্দ্র করে 5 একক ব্যাসার্ধের তিনটি বৃত্ত অঙ্কন করা হলো। ত্রিভুজের বাইরে যেসব বিন্দুতে দুইটি বৃত্ত পরস্পরকে ছেদ করে, তার যেকোনো দুই বিন্দুর সর্বনিম্ন দূরত্বের মানকে <em>a</em><sup>b</sup>+c আকারে প্রকাশ করা যায়। যেখানে <span
             class="mathinline"><em>b</em> × <em>c</em></span> = <span
@@ -52,17 +50,28 @@
                     class="mathinline"><em>a</em> + <em>b</em> + <em>c</em></span>.</p>
         
                     <br>
-           </section>
-        </section>
+        </div>
         
-           <section class="ek">
-            <h2>MOM Contest #Round 3</h2>
-            <section class="ans">
+           <div class="ek">
+            <h2>MOM Contest #Round 3</h2><br>
+            
                 <input type="text" placeholder="Write your solution" class = "write"><br>
-                <a class="reg" href="#">Submit</a>
-            </section>
-           </section>
-    </section>
+                <a class="reg" href="#">Submit</a><br><br>
+        
+                <form method="post" action="sendemail.php">
+                    
+                  
+                    <p>If you have any queries regarding this problem, you can let us know here</p><br>
+                        <input type="email" name="email" required><br>
+                        <textarea id="message" name="message" required></textarea><br>
+                  
+                    <button type="submit" class="sol" >Send Message</button>
+                  </form>
+            
+        </div>
+           
+           
+        </div>
    
 
 

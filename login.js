@@ -1,51 +1,86 @@
-//toggle between reg and login
-
-const loginForm = document.getElementById("login-form");
-const signupForm = document.getElementById("signup-form");
-const signupToggle = document.getElementById("signup-toggle");
-const loginToggle = document.getElementById("login-toggle");
-
-signupForm.style.display = "none";
-
-signupToggle.addEventListener("click", () => {
-  loginForm.style.display = "none";
-  signupForm.style.display = "block";
-});
-
-loginToggle.addEventListener("click", () => {
-    signupForm.style.display = "none";
-    loginForm.style.display = "block";
-  });
-
-
-  //remember pass
-
-  function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var rememberMe = document.getElementById("rememberMe").checked;
+var firebaseConfig = {
+    apiKey: "AIzaSyBiydb9tqJp526GBYwTqv3S7P_ErmOntLg",
+    authDomain: "mom-login-a6e00.firebaseapp.com",
+    projectId: "mom-login-a6e00",
+    storageBucket: "mom-login-a6e00.appspot.com",
+    messagingSenderId: "14987956774",
+    appId: "1:14987956774:web:f55080976493fa99a20ce7"
+  };
   
-    if (rememberMe) {
-      localStorage.setItem("username", username);
-      localStorage.setItem("password", password);
-    } else {
-      localStorage.removeItem("username");
-      localStorage.removeItem("password");
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth()
+const database = firebase.database()
+  
+  
+  
+  function regii(){
+    var email = document.getElementById('email').value
+    var namee = document.getElementById('namee').value
+    var inst = document.getElementById('inst').value
+    var phone = document.getElementById('phone').value
+    var pass = document.getElementById('pass').value
+
+    if(valid_email(email) == false){
+      alert('Email is not valid');
+      return;
     }
-  
-    document.forms[0].reset();
-  
-    var alertBox = document.getElementById("alertBox");
-    var storedUsername = localStorage.getItem("username");
-  
-    if (storedUsername) {
-      document.getElementById("greet").innerHTML = storedUsername;
-      alertBox.style.display = "block";
+    
+    if(valid_pass(pass) == false){
+      alert('Password cannot be of less than 8 characters');
+      return;
     }
+    
+    auth.createUserWithEmailAndPassword(email, pass)
+    .then(function() {
+      var user = auth.currentUser;
+      var database_ref = database.ref();
+      var user_data = {
+        namee:namee,
+        email:email,
+        pass:pass,
+        inst:inst,
+        phone:phone,
+        last_login:Date.now()
+      };
+      database_ref.child('users/' + user.uid).set(user_data)
+      alert('Registration Successful!');
+    })
+
+    .catch(function(error){
+      var error_code = error.code;
+      var error_message = error.message;
+      alert(error_message);
+    });
   }
+
+
+
+    
+    
+    
+    
+    function valid_email(email){
+      var exp = /^[^@]+@\w+(\.\w+)+\w$/;
+      if(exp.test(email)== true)
+      {
+        return true
+      }
+      else{
+        return false
+      }
+    }
+    
+    function valid_pass(pass){
+      if(pass.length < 8)
+      {
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
+
   
-  function closeAlert() {
-    var alertBox = document.getElementById("alertBox");
-    alertBox.style.display = "none";
-  }
+  
   

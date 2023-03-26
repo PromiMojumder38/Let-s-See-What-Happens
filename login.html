@@ -51,37 +51,36 @@
             <a href="#" class="forgot-password">Forgot Password?</a>
           </div>
         
-        <button type="submit" onclick="login()" class="logsub">Sign in</button>
+        <button type="submit" class="logsub">Sign in</button>
         
         
-      </form>
-
-      <div id="alertBox" class="alertBox">
-        <div class="alertContent">
-          <span class="closeBtn" onclick="closeAlert()">×</span>
-          <p>Welcome, <span id="greet"></span>!</p>
-        </div>
-      </div>
+        </form>
   
       <form action="#" method="post" id="signup-form">
         <div class="form-toggle">
           <button class="sup2"> Sign up</button>
           <button id="login-toggle"class="sin2"> Sign in</button>
       </div>
-        <input type="text" placeholder="Username" name="username" required>
-        <input type="text" placeholder="Institution" name="" id="" required>
-        <input type="email" placeholder="Email Address" name="email" required>
-        <input type="text" placeholder="Phone Number" name="" id="" required>
-        <input type="password" placeholder="Password" name="password" required>
+        <input type="text" placeholder="Username" name="username"id="namee" required>
+        <input type="text" placeholder="Institution" name="" id="inst" required>
+        <input type="email" placeholder="Email Address" name="email" id = "email" required>
+        <input type="text" placeholder="Phone Number" name="" id="phone" required>
+        <input type="password" placeholder="Password" name="password" id = "pass" required>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit" onclick="regii()">Register</button>
         
       </form>
     </div>
   </div>
   
-  <script src="login.js"></script>  
+  
 
 
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"></script>
+<script src="login.js"></script>
+<script src="toggle.js"></script>
 </html>

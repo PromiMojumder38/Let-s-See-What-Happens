@@ -1,16 +1,15 @@
 .contain{
-
+display: flex;
   padding: 8px;
 }
 
 .ek{
+  width:25%;
   letter-spacing: 1px;
   height: 100px;
   padding: 10px;
-justify-content: center;
-align-items: center;
-margin: 18px;
-border-radius: 25px;
+margin:50px;
+margin-left: 78px;
 }
 .probs{
   background-image:linear-gradient(to right, black, rgb(37, 35, 35), rgb(92, 86, 86));
@@ -19,11 +18,17 @@ border-radius: 25px;
     letter-spacing: 1px;
     height: fit-content;
   padding: 20px;
-  float:left;
-  width: 55%;
+ 
+  width: 65%;
   border-top-right-radius: 25px;
+  margin: 25px;
   margin-left: 27px;
-   
+}
+.ek h2{
+  color: #fff;
+}
+.ek p{
+  color:#fff;
 }
 .probs p{
   color: white;
@@ -33,6 +38,10 @@ border-radius: 25px;
     font-size: 2rem;
     color: rgb(122, 128, 137);
     text-align: center;
+}
+
+.probs h:hover{
+  color: blue;
 }
 
 .ans{
@@ -48,12 +57,7 @@ border-radius: 25px;
     color:black;
     height:70px;
 }
-.ek h2{
-  margin-left: 130px;
-  margin-bottom: 20px;
-  float:left;
-  color:#fff;
-}
+
 
 .reg{
         height: 25px;
@@ -74,4 +78,20 @@ border-radius: 25px;
 .mathinline{
   font-size: 1.2rem;
   color: #fff;
+}
+
+.maill{
+  width:45%;
+}
+
+.sol{
+ 
+        transition: 0.5s ease;
+        padding: 7px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+  background: rgba(21,21,100);
+  color: #fff;
+  padding: 3%;
 }
