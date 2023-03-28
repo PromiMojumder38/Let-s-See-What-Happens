@@ -19,12 +19,12 @@
     <a href = "index.html"><img src="images/logo.png"><h4>&nbsp&nbsp;Miracles of Math</h4></a>
     <div class="navigation">
         <ul>
-            <li><a href="problems.html">PROBLEMS</a></li>
-            <li><a href="contest.html">CONTESTS</a></li>
-            <li><a href="disco.html">DISCUSSIONS</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="login.html">LOGIN</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="problems.html">PROBLEMS</a></li>
+          <li><a href="contest.html">CONTESTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="login.html">LOGIN</a></li>
         </ul>
     </div>
  </nav>
@@ -37,11 +37,11 @@
     <div class="form-container">
       <form action="#" method="post" id="login-form">
         <div class="form-toggle">
-          <button id="signup-toggle" class="sup1"> Sign up</button>
-          <button  class="sin1"> Sign in</button>
+          <a class="sup1" href="reg.html">Sign up</button>
+          <button  class="sin1"> </a>Sign in</button>
       </div>
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="text" placeholder="Enter Username" id="namee" required>
+        <input type="password" placeholder="Enter Password" id="pass" required>
 
         <div class="form-group">
             <div class="rememberMe">
@@ -51,36 +51,36 @@
             <a href="#" class="forgot-password">Forgot Password?</a>
           </div>
         
-        <button type="submit" class="logsub">Sign in</button>
+        <button type="submit" class="logsub" onclick="login()">Sign in</button>
         
         
         </form>
   
-      <form action="#" method="post" id="signup-form">
-        <div class="form-toggle">
-          <button class="sup2"> Sign up</button>
-          <button id="login-toggle"class="sin2"> Sign in</button>
-      </div>
-        <input type="text" placeholder="Username" name="username"id="namee" required>
-        <input type="text" placeholder="Institution" name="" id="inst" required>
-        <input type="email" placeholder="Email Address" name="email" id = "email" required>
-        <input type="text" placeholder="Phone Number" name="" id="phone" required>
-        <input type="password" placeholder="Password" name="password" id = "pass" required>
-
-        <button type="submit" onclick="regii()">Register</button>
-        
-      </form>
     </div>
   </div>
-  
-  
+  <script type="module">
+    import{initializeApp} from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"
+    import{getDatabase} from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"
+    import{getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+
+    const firebaseConfig = {
+  apiKey: "AIzaSyBiydb9tqJp526GBYwTqv3S7P_ErmOntLg",
+  authDomain: "mom-login-a6e00.firebaseapp.com",
+  databaseURL: "https://mom-login-a6e00-default-rtdb.firebaseio.com",
+  projectId: "mom-login-a6e00",
+  storageBucket: "mom-login-a6e00.appspot.com",
+  messagingSenderId: "14987956774",
+  appId: "1:14987956774:web:f55080976493fa99a20ce7"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const database = getDatabase(app);
+
+  </script>
 
 
 </body>
 
-<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"></script>
-<script src="login.js"></script>
-<script src="toggle.js"></script>
+
 </html>

@@ -13,7 +13,7 @@
     height: 65%;
     padding: 30px;
     background:transparent;
-    backdrop-filter: blur(10px);
+    
     border-radius: 20px;
     border: 1px solid white;
   }
@@ -38,7 +38,7 @@
     border-style:none;
     border-bottom: 2px solid grey;
     }
-  button[type=submit] {
+  input[type=submit] {
     background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
     color: white;
     font-size: 20px;
@@ -53,11 +53,12 @@
     margin-bottom: 30px;
   }
   
-  button[type=submit]:hover {
+  input[type=submit]:hover {
     background-color: rgb(207, 40, 126);
   }
   
  .sin1{
+  margin-left: 40px;
   margin-bottom: 60px;
   width:45%;
   border: none;
@@ -66,13 +67,14 @@
   font-size:20px;
   background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
   color:white;
+  text-align: center;
  }
  .sup1{
+  margin-left: 40px;
   margin-bottom: 60px;
   width:45%;
   height:35px;
-  border: none;
-  border-radius: 20px;
+ text-decoration: none;
   font-size:20px;
   background:transparent;
   color:rgb(71, 69, 69);
@@ -86,6 +88,8 @@
     color:blue;
    }
  .sup2{
+  margin-left: 28px;
+  text-align: center;
   margin-bottom: 20px;
   width:45%;
   height:35px;
@@ -96,11 +100,11 @@
   color:white;
  }
  .sin2{
-  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-bottom: 60px;
   width:45%;
-  border: none;
   height:35px;
-  border-radius: 20px;
+ text-decoration: none;
   font-size:20px;
   background:transparent;
   color:rgb(71, 69, 69);
@@ -147,30 +151,8 @@
     background: blue;
   }
 
-
-
-
-  .alertBox {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
   
-  .alertContent {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-    position: relative;
-  }
+  
   
   .closeBtn {
     color: #aaa;
