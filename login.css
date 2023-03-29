@@ -1,175 +1,164 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
+*:focus {
+  outline: none;
+}
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: i;
-  }
-  
-  .form-container {
-    width: 25%;
-    height: 65%;
-    padding: 30px;
-    background:transparent;
-    
-    border-radius: 20px;
-    border: 1px solid white;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
- 
-  
-  h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: center;
-    color:#fff;
-    font-size: 30px;
-  }
-  
-  
-  input[type=text], input[type=password], input[type=email] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    background: transparent;
-    color: #000;
-    border-style:none;
-    border-bottom: 2px solid grey;
-    }
-  input[type=submit] {
-    background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-  .logsub{
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  input[type=submit]:hover {
-    background-color: rgb(207, 40, 126);
-  }
-  
- .sin1{
-  margin-left: 40px;
-  margin-bottom: 60px;
-  width:45%;
-  border: none;
-  height:35px;
-  border-radius: 20px;
-  font-size:20px;
-  background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
-  color:white;
-  text-align: center;
- }
- .sup1{
-  margin-left: 40px;
-  margin-bottom: 60px;
-  width:45%;
-  height:35px;
- text-decoration: none;
-  font-size:20px;
-  background:transparent;
-  color:rgb(71, 69, 69);
-  cursor: pointer;
-   }
-   .sup1:hover{
-    color:blue;
-   }
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
 
-   .sin2:hover{
-    color:blue;
-   }
- .sup2{
-  margin-left: 28px;
-  text-align: center;
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
   margin-bottom: 20px;
-  width:45%;
-  height:35px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
   border: none;
-  border-radius: 20px;
-  font-size:20px;
-  background-image: linear-gradient(to right, rgb(149, 10, 100), rgb(197, 6, 38));
-  color:white;
- }
- .sin2{
-  margin-left: 40px;
-  margin-bottom: 60px;
-  width:45%;
-  height:35px;
- text-decoration: none;
-  font-size:20px;
-  background:transparent;
-  color:rgb(71, 69, 69);
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
   cursor: pointer;
- 
- }
- 
-  
-  @media screen and (max-width: 500px) {
-    .form-container {
-      width: 90%;
-    }
-  }
+}
 
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
-  }
-  
-  .rememberMe {
-    display: flex;
-    align-items: center;
-    padding-left: 2px;
-    color: rgb(198, 14, 75);
-  }
-  
-  .rememberMe input[type=checkbox] {
-    margin-right: 5px;
-    padding-left: 2px;
-  }
-  
-  .forgot-password {
-    color:rgb(198, 14, 75);
-    text-decoration: none;
-    padding-left: 2px;
-  }
-  .forgot-password:hover {
-    color:blue;
-  }
-  .rmbr{
-    color:blue;
-    background: blue;
-  }
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
 
-  
-  
-  
-  .closeBtn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: 10px;
-    top: 0;
-  }
-  
-  .closeBtn:hover,
-  .closeBtn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.Regi {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #f0e3e3;
+  background-color: #a02b16;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.Regi:hover,
+button.Regi:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.Regi {
+  background: #DD4B39;
+}

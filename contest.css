@@ -19,6 +19,7 @@ section{
     box-sizing: border-box;
 }
 
+
 .events ul{
     position: absolute;
     width:90%;
@@ -96,7 +97,7 @@ section{
  }
 
  .time h2 span{
-    font-size: 15px;
+    font-size: 10px;
 
  }
 
