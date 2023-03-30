@@ -4,12 +4,8 @@ display: flex;
 }
 
 .ek{
-  width:25%;
   letter-spacing: 1px;
-  height: 100px;
-  padding: 10px;
-margin:50px;
-margin-left: 78px;
+  
 }
 .probs{
   background-image:linear-gradient(to right, black, rgb(37, 35, 35), rgb(92, 86, 86));
@@ -19,10 +15,10 @@ margin-left: 78px;
     height: fit-content;
   padding: 20px;
  
-  width: 65%;
+  width: 50%;
   border-top-right-radius: 25px;
-  margin: 25px;
-  margin-left: 27px;
+margin:50px;
+margin-left: 78px;
 }
 .ek h2{
   color: #fff;
@@ -47,6 +43,7 @@ margin-left: 78px;
 .ans{
     float: left;
     margin-left: 130px;
+    padding: 30px;
     
 }
 .write{

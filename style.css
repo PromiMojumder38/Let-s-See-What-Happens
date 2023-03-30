@@ -75,9 +75,9 @@ nav img:hover{
     color: white;
   display: block;
   padding: 0 15px;
-  padding-left: 70px;
+  padding-left: 50px;
   line-height: 70px;
-  font-size: 20px;
+  font-size: 17px;
   background: #000;
   transition: .5s;
   text-decoration: none;
@@ -106,10 +106,10 @@ nav .navigation ul ul{
     z-index: 2;
   }
   nav .navigation ul ul li{
-    width: 250px;
+    width: 200px;
     display: list-item;
     position: relative;
-    border: 1px solid #042331;
+    border: 1px solid navy;
     border-top: none;
   }
   nav .navigation ul ul li a{

@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
-    <title>Miracles of Math</title>
+    <title>জন্মদিন সৌহার্দ্য</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel = "stylesheet" href = "problems.css">
     <link rel = "stylesheet" href = "discoo.css">
@@ -23,8 +23,8 @@
                 <li class="dropdown">
                     <a href="#">PROBLEMS</a>
                     <ul>
-                      <li><a href="prev_contest.html">PREVIOUS CONTESTS</a></li>
-                      <li><a href="more_prob.html">MORE PROBLEMS</a></li>
+                      <li><a href="prev_contest.html">PREVIOUS</a></li>
+                      <li><a href="more_prob.html">MORE</a></li>
                     </ul>
                   </li>
                 <li><a href="blog.html">BLOG</a></li>
@@ -91,13 +91,23 @@
         </section>      
         </section>
         
-           <section class="ek">
-            <h2>MOM Contest #Round 3</h2>
-            <section class="ans">
+        <div class="ek">
+            <h2>MOM Contest #Round 3</h2><br>
+            
                 <input type="text" placeholder="Write your solution" class = "write"><br>
-                <a class="reg" href="#">Submit</a>
-            </section>
-           </section>
+                <a class="reg" href="#">Submit</a><br><br>
+        
+                <form method="post" action="sendemail.php">
+                    
+                  
+                    <p>If you have any queries regarding this problem, you can let us know here</p><br>
+                        <input type="email" name="email" required><br>
+                        <textarea id="message" name="message" required></textarea><br>
+                  
+                    <button type="submit" class="sol" >Send Message</button>
+                  </form>
+            
+        </div> 
     </section>
 
    
