@@ -2,12 +2,12 @@
 
 #login-box {
   position: relative;
-  margin: 5% auto;
-  width: 600px;
-  height: 400px;
-  background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 5% auto;
+    width: 700px;
+    height: 500px;
+    background: transparent;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(138, 90, 90, 0.4);
 }
 
 .left {
@@ -24,6 +24,7 @@ h1 {
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
+  color:white;
 }
 
 input[type="text"],
@@ -32,7 +33,7 @@ input[type="password"] {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 4px;
-  width: 220px;
+  width: 180px;
   height: 32px;
   border: none;
   border-bottom: 1px solid #AAA;
@@ -40,28 +41,33 @@ input[type="password"] {
   font-weight: 400;
   font-size: 15px;
   transition: 0.2s ease;
+  background-color: transparent;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
   border-bottom: 2px solid #16a085;
-  color: #16a085;
+  color: #fff;
   transition: 0.2s ease;
 }
 
 input[type="submit"] {
-  margin-top: 28px;
+  margin-left: 40px;
+  margin-top: 10px;
   width: 120px;
-  height: 32px;
-  background: #16a085;
-  border: none;
+  height: 40px;
+  background: transparent;
+  border-style: solid;
   border-radius: 2px;
+  border-color: #fff;
   color: #FFF;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  font-size: 15px;
   text-transform: uppercase;
   transition: 0.1s ease;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 input[type="submit"]:hover,
@@ -69,7 +75,10 @@ input[type="submit"]:focus {
   opacity: 0.8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   transition: 0.1s ease;
+border-color: #55ACEE;
+  color:#55ACEE;
 }
+
 
 input[type="submit"]:active {
   opacity: 1;
@@ -77,31 +86,26 @@ input[type="submit"]:active {
   transition: 0.1s ease;
 }
 
-.or {
-  position: absolute;
-  top: 180px;
-  left: 280px;
-  width: 40px;
-  height: 40px;
-  background: #DDD;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
-  text-align: center;
-}
 
 .right {
   position: absolute;
   top: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
+  padding: 5px;
+  padding-top: 30px;
+  width: 250px;
   height: 400px;
   background: url('https://goo.gl/YbktSj');
   background-size: cover;
   background-position: center;
   border-radius: 0 2px 2px 0;
+  color:#fff;
+}
+img {
+  width: 170%;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
 .right .loginwith {
@@ -111,41 +115,16 @@ input[type="submit"]:active {
   color: #FFF;
   text-align: center;
 }
+.right p{
+  font-size: 15px;
+}
 
-button.Regi {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 220px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  color: #f0e3e3;
-  background-color: #a02b16;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  transition: 0.2s ease;
+
+.Regii{
+  color:#DD4B39;
+}
+
+.Regii:hover{
+  color:#55ACEE;
   cursor: pointer;
-}
-
-button.Regi:hover,
-button.Regi:focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin.facebook {
-  background: #32508E;
-}
-
-button.social-signin.twitter {
-  background: #55ACEE;
-}
-
-button.Regi {
-  background: #DD4B39;
 }
