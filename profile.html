@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MOM Login</title>
+  <link rel="icon" type="image/x-icon" href="Images/logo2.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Import Firebase libraries -->
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+  
+    const firebaseConfig = {
+            apiKey: "AIzaSyBiydb9tqJp526GBYwTqv3S7P_ErmOntLg",
+            authDomain: "mom-login-a6e00.firebaseapp.com",
+            databaseURL: "https://mom-login-a6e00-default-rtdb.firebaseio.com",
+            projectId: "mom-login-a6e00",
+            storageBucket: "mom-login-a6e00.appspot.com",
+            messagingSenderId: "14987956774",
+            appId: "1:14987956774:web:f55080976493fa99a20ce7"
+        };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const email = user.email;
+        const usernameSpan = document.getElementById('email');
+        usernameSpan.textContent = email;
+
+      } else {
+        console.log("No user is currently logged in");
+      }
+    });
+  </script>
+  
+  
+  
+</head>
+
+  <body>
+    <nav>
+      <a href = "index.html"><img src="images/logo.png"><h4>&nbsp&nbsp;Miracles of Math</h4></a>
+  
+      <div class="navigation">
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+  
+              <li class="dropdown">
+                  <a href="#">PROBLEMS</a>
+                  <ul class ="droppdown">
+                    <li><a href="prev_contest.html">PREVIOUS</a></li>
+                    <li><a href="more_prob.html">MORE</a></li>
+                  </ul>
+                </li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="profile-section">
+    <h2>User Info:</h2>
+    
+      <p>Username: <span id="email"></span></p>
+      
+    
+  </div>
+</body>
+
+
+
+  
+
+
+     
+
+
+
+
+
+</html>

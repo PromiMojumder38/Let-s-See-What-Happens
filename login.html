@@ -17,7 +17,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
 
   <body>
     <nav>
@@ -29,7 +28,7 @@
   
               <li class="dropdown">
                   <a href="#">PROBLEMS</a>
-                  <ul>
+                  <ul class ="droppdown">
                     <li><a href="prev_contest.html">PREVIOUS</a></li>
                     <li><a href="more_prob.html">MORE</a></li>
                   </ul>
@@ -51,7 +50,23 @@
         <input type="text" id="email" name="email" placeholder="E-mail" />
         <input type="password" id="password" name="password" placeholder="Password" />
 
-        <input type="submit" id='login' name="Login" value="Login" /><br><br>
+        <input type="submit" onclick="showPopup()"  id='login' name="Login" value="Login" /><br><br>
+
+        <div id="popup-success" class="popup">
+          <div class="popup-content">
+            <h2>Login Successful</h2><br>
+            <p>You are now logged in.</p><br>
+            <button class="close-popup" onclick="hidePopup()">OK</button>
+          </div>
+        </div>
+        
+        <div id="popup-error" class="popup">
+          <div class="popup-content">
+            <h2>Login Error</h2><br>
+            <p>Invalid username or password. Please try again.</p><br>
+            <button class="close-popup" onclick="hidePopup()">OK</button>
+          </div>
+        </div>
         <p>Don't have an account? <a class="Regii" onclick="window.location.href = 'registration.html';">Register</a></p>
         
 
@@ -62,6 +77,7 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js";
     import { getDatabase } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
     import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
     // TODO: Add SDKs for Firebase products that you want to use
@@ -82,6 +98,7 @@
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
     const auth = getAuth();
+    
 
     login.addEventListener('click', (e) => {
       var email = document.getElementById('email').value;
@@ -92,23 +109,33 @@
           // Signed in 
           const user = userCredential.user;
 
-          location.href = 'index.html';
-          alert('Login Successful');
+      
+          var popupSuccess = document.getElementById("popup-success");
+  var popupError = document.getElementById("popup-error");
+  popupSuccess.style.display = "block";
+    popupError.style.display = "none";
+    location.href = 'profile.html';
+    
+ 
           
           // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-
-          alert(errorMessage);
+          var popupSuccess = document.getElementById("popup-success");
+  var popupError = document.getElementById("popup-error");
+  popupSuccess.style.display = "none";
+    popupError.style.display = "block";
         });
 
+
     });
+    
 
 
   </script>
+  <script src="popup.js"></script>
 
 </html>
 
-</html>

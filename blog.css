@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.kahinii{
+
+.kahiniolekhok {
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+  }
+  .kahinii{
+   float:right;
+   position: relative;
+   overflow-y: scroll;
+   width: 80%;
     padding: 10px;
     display: flex;
-    flex-direction: column;
 }
  .kahinii p{
     text-align:left;
@@ -10,6 +19,17 @@
     margin: 10px;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    width: 98%;
     padding: 15px;
+ }
+ .kahinilekhok{
+   position: fixed;
+    color:#fff;
+    overflow: hidden;
+    padding: 10px;
+    border-color: #fff;
+    border-style: solid;
+    height: fit-content;
+    border-radius: 15px;
+    float:right;
+    width: 20%;
  }
