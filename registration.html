@@ -108,6 +108,7 @@
 
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
+                    
                     // Signed in 
                     const user = userCredential.user;
 
@@ -123,6 +124,9 @@
                       
                     });
 
+
+                    
+
                     
 
                     var popupSuccess = document.getElementById("popup-success");
@@ -130,19 +134,14 @@
   popupSuccess.style.display = "block";
     popupError.style.display = "none";
     location.href = 'login.html';
-    createUserCollection(user)
-                    {
-                        firebase.firestore().collection('users')
-                        .doc(user.uid)
-                        .set({
-                            username: username,
-                        email: email,
-                        password: password,
-                        institution: institution,
-                        phone: phone
+
+    firebase.database().ref("User").set({
+                            username: document.getElementById('username').value,
+                        email: document.getElementById('email').value,
+                        password: document.getElementById('password').value,
+                        institution: document.getElementById('institution').value,
+                        phone: document.getElementById('phone').value
                         })
-                    }
-                   
     
                     // ...
                 })
