@@ -123,11 +123,25 @@
                       
                     });
 
+                    
+
                     var popupSuccess = document.getElementById("popup-success");
   var popupError = document.getElementById("popup-error");
   popupSuccess.style.display = "block";
     popupError.style.display = "none";
     location.href = 'login.html';
+    createUserCollection(user)
+                    {
+                        firebase.firestore().collection('users')
+                        .doc(user.uid)
+                        .set({
+                            username: username,
+                        email: email,
+                        password: password,
+                        institution: institution,
+                        phone: phone
+                        })
+                    }
                    
     
                     // ...
@@ -151,5 +165,7 @@
 
 
     </script>
+    <script src="popup.js"></script>
+
 
 </html>
