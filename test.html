@@ -42,13 +42,10 @@ auth.onAuthStateChanged((user) => {
     const uid = user.uid;
     const usersCollection = collection(db, "users");
     const userDoc = doc(usersCollection, uid);
-    //console.log(userDoc);
 
     getDoc(userDoc)
       .then((doc) => {
-        console.log("doc: ", doc);
       if (doc.exists()) {
-        
         const user = doc.data();
         // Display the user's data in the HTML page
         document.getElementById("username").textContent = user.username;

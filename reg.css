@@ -1,0 +1,329 @@
+
+
+#loginn {
+    position: relative;
+      margin: 5% auto;
+     
+      width: 700px;
+      height: 500px;
+      background: transparent;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(138, 90, 90, 0.4);
+  }
+  #registration {
+    position: relative;
+      margin: 5% auto;
+      width: 700px;
+      height: 500px;
+      background: transparent;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(138, 90, 90, 0.4);
+  }
+  
+  #loginn .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+  
+  #loginn h1 {
+    margin: 0 0 20px 0;
+    margin-top: 45px;
+    font-weight: 300;
+    font-size: 28px;
+    color:white;
+  }
+  
+  #loginn input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 180px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+    background-color: transparent;
+    color:white;
+  }
+  
+  #loginn input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #16a085;
+    color: #fff;
+    transition: 0.2s ease;
+  }
+  
+  #loginn input[type="submit"] {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #fff;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #loginn input[type="submit"]:hover{
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  border-color: #55ACEE;
+    color:#55ACEE;
+  }
+  
+  
+  #loginn input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  
+  #loginn .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 30px;
+    width: 250px;
+    height: 400px;
+    background: url('https://goo.gl/YbktSj');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+    color:#fff;
+  }
+  #loginn img {
+    width: 170%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #loginn .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+  }
+  #loginn .right p{
+    font-size: 15px;
+  }
+  
+  
+  #loginn .Regii{
+    color:#DD4B39;
+  }
+  
+  #loginn .Regii:hover{
+    color:#55ACEE;
+    cursor: pointer;
+  }
+  #loginn .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #loginn .popup-content {
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    border-color: #fff;
+    padding: 20px;
+    margin: 20% auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #loginn .close-popup {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #loginn .close-popup:hover{
+    background-color: rgb(76, 76, 185);
+  }
+
+
+
+  #registration .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+  }
+  
+  #registration h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    color:white;
+  }
+  
+  #registration input[type="text"],
+  input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 180px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+    background-color: transparent;
+    color:white;
+  }
+  
+  #registration input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-bottom: 2px solid #16a085;
+    color: #fff;
+    transition: 0.2s ease;
+  }
+  
+  #registration input[type="submit"] {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #fff;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #registration input[type="submit"]:hover{
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  border-color: #55ACEE;
+    color:#55ACEE;
+  }
+  
+  
+ #registration input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  
+  #registration .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 30px;
+    width: 250px;
+    height: 400px;
+    background: url('https://goo.gl/YbktSj');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+    color:#fff;
+  }
+  #login img {
+    width: 170%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #registration .right .loginwith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+  }
+  #registration .right p{
+    font-size: 15px;
+  }
+  
+  
+  #registration .Regii{
+    color:#DD4B39;
+  }
+  
+  #registration .Regii:hover{
+    color:#55ACEE;
+    cursor: pointer;
+  }
+  #registration .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #registration .popup-content {
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    border-color: #fff;
+    padding: 20px;
+    margin: 20% auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  #registration .close-popup {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #registration .close-popup:hover{
+    background-color: rgb(76, 76, 185);
+  }
