@@ -1,131 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Profile</title>
-  <link rel="icon" type="image/x-icon" href="Images/logo2.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="profile.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Firebase SDK -->
-  
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
-import { getFirestore, doc, getDoc, collection } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBiydb9tqJp526GBYwTqv3S7P_ErmOntLg",
-            authDomain: "mom-login-a6e00.firebaseapp.com",
-            databaseURL: "https://mom-login-a6e00-default-rtdb.firebaseio.com",
-            projectId: "mom-login-a6e00",
-            storageBucket: "mom-login-a6e00.appspot.com",
-            messagingSenderId: "14987956774",
-            appId: "1:14987956774:web:f55080976493fa99a20ce7"
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const firestore = getFirestore(app);
-const storage = getStorage(app);
-const db = getFirestore(app);
-
-// Check if user is logged in
-auth.onAuthStateChanged((user) => {
-  if (user) {
-    // User is logged in, get the user's data from Firestore
-    const uid = user.uid;
-    const usersCollection = collection(db, "users");
-    const userDoc = doc(usersCollection, uid);
-
-    getDoc(userDoc)
-      .then((doc) => {
-      if (doc.exists()) {
-        const user = doc.data();
-        // Display the user's data in the HTML page
-        document.getElementById("username").textContent = user.username;
-        document.getElementById("email").textContent = user.email;
-        document.getElementById("phone").textContent = user.phone;
-        document.getElementById("institution").textContent = user.institution;
-      } else {
-        console.log("No such document!");
-      }
-    }).catch((error) => {
-      console.log("Error getting document:", error);
-    });
-  } else {
-    // User is not logged in, redirect to login page
-    window.location.replace("login.html");
-  }
-});
-
-// Add click event listener to update button
-document.getElementById("update-btn").addEventListener("click", () => {
-  // Redirect to update profile page
-  window.location.replace("update_profile.html");
-});
-
-// Add click event listener to sign out button
-document.getElementById("signout-btn").addEventListener("click", () => {
-  // Sign out the user and redirect to login page
-  auth.signOut().then(() => {
-    window.location.replace("login.html");
-  }).catch((error) => {
-    console.log(error.message);
-  });
-});
-
-    
-    
-   
-
-  </script>
- 
+  <link rel="stylesheet" href="test.css">
 </head>
-
 <body>
-  <nav>
-    <a href="index.html"><img src="images/logo.png"><h4>&nbsp&nbsp;Miracles of Math</h4></a>
-
-    <div class="navigation">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-
-        <li class="dropdown">
-          <a href="#">PROBLEMS</a>
-          <ul class="droppdown">
-            <li><a href="prev_contest.html">PREVIOUS</a></li>
-            <li><a href="more_prob.html">MORE</a></li>
-          </ul>
-        </li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="login.html">LOGIN</a></li>
-      </ul>
+  <!-- HTML -->
+  <div class="expandable-section">
+    <h3 class="expandable-header">Click to expand please</h3>
+    <div class="expandable-content">
+      <p>This is the content that can be expanded or collapsed.</p>
     </div>
-  </nav>
-
-  <div class="profile-section">
-    <h2>User Info:</h2>
-  
-    <p>Username: <span id="username"></span></p>
-    <p>Email: <span id="email"></span></p>
-    <p>Phone: <span id="phone"></span></p>
-    <p>Institution: <span id="institution"></span></p>
-  
-    <button id="update-btn">Update Profile</button>
-    <button id="signout-btn">Logout</button>
   </div>
 
-  
-  
-  
-  
-  
+  <script type="module">
+    // JavaScript
+    const expandableHeaders = document.querySelectorAll('.expandable-header');
+
+    expandableHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
