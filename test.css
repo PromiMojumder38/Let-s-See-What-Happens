@@ -11,7 +11,7 @@
   
   .expandable-section.active .expandable-content {
     max-height: 1000px;
-    transition: max-height 0.5s ease-in;
+    transition: 100% 0.5s ease-in;
     
   }
   

@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Poppons', sans-serif;
-    background: url("images/bgAll.jpg") no-repeat center center fixed; 
+    background: linear-gradient(to right, maroon, rgb(9, 9, 57)) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -238,64 +238,10 @@ nav img:hover{
    background: #d344be;
 }
 
-#join{
-    display: flex;
-    justify-content: center;
+.up{
     width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 30px;
-    margin-bottom: 20px;
-}
-#join a{
-    height: 80px;
-    width: 80px;
-    background-color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    margin: 10px;
-    line-height: 120px;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #000;
-}
-
-
-#join i{
-    transition: all 0.4s linear;
-    font-size: 40px;
-    padding: 27%;
-    padding-left: 25%;
-}
-#join a.fbpage:hover{
-    color: white;
-    background-color: #122a5e;
-}
-#join a.fbgrp:hover{
-    color: white;
-    background-color: #3b5998;
-}
-#join a.yt:hover{
-    color: white;
-    background-color: #ff0000;
-}
-#join a.discord:hover{
-    color: white;
-    background-color: #7289da;
-}
-#join a.tele:hover{
-    color: white;
-    background-color: #0088cc;
-}
-#join a.wp:hover{
-    background-color: #25D366;
-    color: white;
-}
-
-#join a.maill:hover{
-    background-color: #DB4437;
-    color: white;
+    height: 100vh;
+    position: relative;
 }
 .up h1{
     text-align: center;
@@ -303,130 +249,8 @@ nav img:hover{
     font-size: 50px;
 }
 
-.blue{
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding-top: 10px;
-    text-align: center;
-    font-weight: 600;
-    color: white;
-    background: transparent;
-}
-#experts{
-    padding: 8vw 8vw 6vw 8vw;
-    text-align: center;
-    
-}
-#experts .expert-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 1.5rem;
-    margin-top:50px;
-    
-    
-}
-#experts h1{
-    color: #fff;
-}
-
-#experts p{
-    color: #fff;
-}
-
-
-#experts .expert-box .profile{
-    background: transparent;
-    padding: 30px 10px;
-    width: 300px;
-    height: 320px;
-    margin:auto;
-    color: white;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-#experts .expert-box .profile:hover{
-    transform: scale(1.03);
-    transition: 0.5s ease;
-}
-
- .chobi{
-    border-radius: 50%;
-    width:200px;
-    height: 200px;
-}
-
-.nam{
-    padding-top: 10px;
-    line-height: 1.0;
-    color:#fff;
-}
-
- .pro-links{
-    margin-top: 8px;
-    
-}
-.profile p{
-    color:#fff;
-}
-
-.pro-links i{
-    color:  #fff;
-    border: 4px solid transparent;
-    cursor: pointer;
-    transition: 0.3s ease;
-    
-}
-.pro-links i:hover{
-    background: #fff;
-    color:#221394;
-    border: 5px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body{
-     margin: 0;
-     padding: 0;
-}
-
-section{
-    width: 100%;
-    height: 100vh;
-}
-.events{
-    color:white;
-    margin:0;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background: transparent;
-    backdrop-filter: blur(2px);
-    float: right;
-    box-sizing: border-box;
-}
-
-
-.events ul{
-    position: absolute;
-    width:90%;
-    left:50%;
-    transform: translate(-50%);
-    margin:0;
-    padding:40px;
-    box-sizing: border-box;
-    float: right;
-}
- .events ul li{
-    list-style: none;
-    box-sizing: border-box;
-    height:200px;
-    margin: 15px 0;
-    
-}
 .levents{
     color:white;
-    margin:0;
     position: relative;
     width: 50%;
     height: 100%;
@@ -528,8 +352,182 @@ section{
     color: #fff;
     border-color: rgb(189, 13, 48);
  }
+ .events{
+    color:white;
+    margin:0;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    float: right;
+    box-sizing: border-box;
+}
 
 
+.events ul{
+    position: absolute;
+    width:90%;
+    left:50%;
+    transform: translate(-50%);
+    margin:0;
+    padding:40px;
+    box-sizing: border-box;
+    float: right;
+}
+ .events ul li{
+    list-style: none;
+    box-sizing: border-box;
+    height:200px;
+    margin: 15px 0;
+    
+}
+
+
+#join{
+ position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom:0;
+}
+#join a{
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    line-height: 120px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+
+#join i{
+    transition: all 0.4s linear;
+    font-size: 40px;
+    padding: 27%;
+    padding-left: 25%;
+}
+#join a.fbpage:hover{
+    color: white;
+    background-color: #122a5e;
+}
+#join a.fbgrp:hover{
+    color: white;
+    background-color: #3b5998;
+}
+#join a.yt:hover{
+    color: white;
+    background-color: #ff0000;
+}
+#join a.discord:hover{
+    color: white;
+    background-color: #7289da;
+}
+#join a.tele:hover{
+    color: white;
+    background-color: #0088cc;
+}
+#join a.wp:hover{
+    background-color: #25D366;
+    color: white;
+}
+
+#join a.maill:hover{
+    background-color: #DB4437;
+    color: white;
+}
+
+
+.blue{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+}
+#experts{
+    padding: 8vw 8vw 6vw 8vw;
+    text-align: center;
+    
+}
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 1.5rem;
+    margin-top:50px;
+    
+    
+}
+#experts h1{
+    color: #fff;
+}
+
+#experts p{
+    color: #fff;
+}
+
+
+#experts .expert-box .profile{
+    background: transparent;
+    padding: 30px 10px;
+    width: 300px;
+    height: 320px;
+    margin:auto;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+#experts .expert-box .profile:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease;
+}
+
+ .chobi{
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+}
+
+.nam{
+    padding-top: 10px;
+    line-height: 1.0;
+    color:#fff;
+}
+
+ .pro-links{
+    margin-top: 8px;
+    
+}
+.profile p{
+    color:#fff;
+}
+
+.pro-links i{
+    color:  #fff;
+    border: 4px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+.pro-links i:hover{
+    background: #fff;
+    color:#221394;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+ 
 
 
 
