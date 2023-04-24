@@ -27,5 +27,6 @@ function hidePopup() {
       registrationForm.style.display = "block";
       loginForm.style.display = "none";
   }
-
+  
+  
   
