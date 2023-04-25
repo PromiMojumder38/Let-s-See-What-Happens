@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>MOM Contest Round 3 (Senior)</title>
     <link rel = "stylesheet" href = "style.css">
-    <link rel = "stylesheet" href = "problems2.css">
     <link rel="icon" type="image/x-icon" href="Images/logo2.png">
     <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
@@ -35,15 +34,41 @@
  
 
  
-    <div class = "contain">
-        <div class ="probs">
-            <div class="middle">
-                <h><a style="text-decoration: none" href ="অস্পর্শ্য দূরত্ব.html">অস্পর্শ্য দূরত্ব</a></h>
-                <p>MOM Contest #Round 3 (Senior)</p>
-            </div>
-            
+  <div class="probslider-container">
+            <ul class="probslider">
+                <li>
+                    <div class="probcard">
+                            <h2>অস্পর্শ্য দূরত্ব</h2>
+                            <p>8 একক দৈর্ঘ্যবিশিষ্ট একটি সমবাহু ত্রিভুজের তিন শীর্ষবিন্দুকে কেন্দ্র করে 5 একক ব্যাসার্ধের তিনটি বৃত্ত অঙ্কন করা হলো। ত্রিভুজের বাইরে যেসব বিন্দুতে দুইটি বৃত্ত পরস্পরকে ছেদ করে, তার যেকোনো দুই বিন্দুর সর্বনিম্ন দূরত্বের মানকে <em>a</em><sup>b</sup>+c আকারে প্রকাশ করা যায়। যেখানে <span
+                                class="mathinline"><em>b</em> × <em>c</em></span> = <span
+                                class="mathinline">2(<em>a</em>+<em>b</em>)</span> এবং <span
+                                class="mathinline"><em>b</em></span> ও <span
+                                class="mathinline"><em>c</em></span> পরস্পর সহমৌলিক। <span
+                                class="mathinline"><em>a</em> + <em>b</em> + <em>c</em></span> নির্ণয়
+                                করো।</p><br>
+                                    <p>The centers of three circles of radius <span
+                                        class="mathinline">5</span> are located in the vertexes of an
+                                        equilateral triangle. The length of the sides of the triangle is <span
+                                        class="mathinline">8</span>. The value of the smallest distances
+                                        between the intersection points of the circles, which are outside of the
+                                        triangle, can be expressed as <span
+                                        class="mathinline"><em>a</em><sup>b</sup>+c</em></span>. Where <span
+                                        class="mathinline"><em>b</em> × <em>c</em></span> = <span
+                                        class="mathinline">2(<em>a</em>+<em>b</em>)</span> and <span
+                                        class="mathinline"><em>b</em></span> and <span
+                                        class="mathinline"><em>c</em></span> are co-primes. Find <span
+                                        class="mathinline"><em>a</em> + <em>b</em> + <em>c</em></span>.</p>
+                        <div style="clear: both;"></div>
+                    </div>
+                </li>
+               
+
+
+            </ul>
+            <button class="probslider-prev">&#10094;</button>
+            <button class="probslider-next">&#10095;</button>
         </div>
-    </div>
+    
   
     
     
@@ -53,4 +78,32 @@
 
 
 </body>
+<script type="module">
+    const slider = document.querySelector('.probslider');
+    const prevBtn = document.querySelector('.probslider-prev');
+    const nextBtn = document.querySelector('.probslider-next');
+    const cards = slider.querySelectorAll('.probcard');
+    const cardWidth = cards[0].offsetWidth;
+    let scrollAmount = 0;
+    
+    nextBtn.addEventListener('click', () => {
+      if (scrollAmount + slider.offsetWidth < slider.scrollWidth) {
+        scrollAmount += cardWidth * 1.5;
+        slider.scroll({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      }
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      if (scrollAmount > 0) {
+        scrollAmount -= cardWidth * 1.5;
+        slider.scroll({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      }
+    });
+  </script>
 </html>

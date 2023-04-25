@@ -370,7 +370,7 @@ margin-bottom: 30px;
 
 
 
-
+/*Contests*/
  .up h1{
     text-align: center;
     color:#fff;
@@ -531,7 +531,93 @@ margin-bottom: 30px;
  }
 
 
+/*problems*/
 
+.probslider-container {
+    display: flex;
+    position: relative;
+  }
+  
+  .probslider {
+    background-color: transparent;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  }
+  
+  .probslider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .probcard{
+    width:1000px;
+    letter-spacing: 1px;
+    height:fit-content;
+    background-image:linear-gradient(to right, black, rgb(37, 35, 35), rgb(92, 86, 86));
+  padding: 30px;
+  border: 3px solid grey; 
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin:88px;
+  margin-left: 250px;
+  margin-right: 250px;
+  }
+  
+  
+  
+  
+  .probcard p{
+  color: white;
+  font-size: 1.2rem;
+  line-height: 2;
+  }
+  
+  .probcard h2{
+        font-size: 1.8rem;
+        color: whitesmoke;
+       line-height: 3;
+    }
+    
+  
+  
+    .probslider-prev {
+      left: 0;
+    }
+    
+    .probslider-next {
+      right: 0;
+    }
+  
+    
+    .probslider-prev,
+    .probslider-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    
+    
+    .probslider-prev:hover,
+    .probslider-next:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  
+  
+    
 
 
 
